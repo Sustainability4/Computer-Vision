@@ -4,3 +4,5 @@ This repository contains details with the course on Computer Vision undertaken b
 Instructor : Paul 
 
 # List of Topics 
+
+1. CNN : Jovian Script (https://jovian.ai/paulbindass/convolutional-neural-network-world)
