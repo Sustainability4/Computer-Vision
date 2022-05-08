@@ -6,3 +6,4 @@ Instructor : Paul
 # List of Topics 
 
 1. CNN : Jovian Script (https://jovian.ai/paulbindass/convolutional-neural-network-world)
+2. Explore This for more enhanced understanding : https://tensorspace.org/html/playground/lenet.html
