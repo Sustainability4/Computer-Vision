@@ -4,4 +4,4 @@ U-net architecture :
   3. https://www.youtube.com/watch?v=azM57JuQpQI
   4. https://www.youtube.com/watch?v=2nHsBEQst7g
   5. https://www.youtube.com/watch?v=oLvmLJkmXuc
-  6. My Kaggle Notebook : 
+  6. My Kaggle Notebook : https://www.kaggle.com/code/rohanprospects/u-net-clearly-explained-using-tensorflow
