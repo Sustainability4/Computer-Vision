@@ -3,4 +3,4 @@ There are several defined and tested architectures for CNN in order to interpret
 In this folder of our computer vision repository we will be discussing these base architectures in detail and understanding the ideas behind them. 
 
 ## LENET 
-It is the oldest CNN architecture. 
+It is the oldest CNN architecture. It is one of the most simple architecture of CNN. One can visualise the LENET architecture [here](https://tensorspace.org/html/playground/trainingLeNet.html).
