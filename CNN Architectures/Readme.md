@@ -12,5 +12,7 @@ This is the first architecture which led to the start of convolution era as this
 VGG can be successfully applied to face recognition and image classification. VGG reduced the size of kernel and increased the number of convolution layers from ALEXNET. It uses a 1*1 kernel as well. A 1x1 convolution simply maps an input pixel with all it's channels to an output pixel, not looking at anything around itself. It is often used to reduce the number of depth channels, since it is often very slow to multiply volumes with extremely large depths.
 
 ## INCEPTION 
+Inception uses the auxillary softmax layer in order to reduce the problem of gradient vanishing and exploding. 
 
 ## RESNET
+Resnet adds residual network to the convolution layers which reduces the problem of dispersion of gradients and accuracy degradtion in deep networks. 
