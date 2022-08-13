@@ -9,4 +9,7 @@ It is the oldest CNN architecture. It is one of the most simple architecture of 
 This is the first architecture which led to the start of convolution era as this was the first architecture with credible results. Alextnet gives better results as it uses RELU activation function. There is a Local Response Normalisation is applied owing to using Relu. There is a dropout layer as well, which deactivate some of the neurons. 
 
 ## VGG NET
+VGG can be successfully applied to face recognition and image classification. VGG reduced the size of kernel and increased the number of convolution layers from ALEXNET. It uses a 1*1 kernel as well. A 1x1 convolution simply maps an input pixel with all it's channels to an output pixel, not looking at anything around itself. It is often used to reduce the number of depth channels, since it is often very slow to multiply volumes with extremely large depths.
+
+## INCEPTION 
 
