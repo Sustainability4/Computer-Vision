@@ -4,3 +4,9 @@ In this folder of our computer vision repository we will be discussing these bas
 
 ## LENET 
 It is the oldest CNN architecture. It is one of the most simple architecture of CNN. One can visualise the LENET architecture [here](https://tensorspace.org/html/playground/trainingLeNet.html). We use 5*5 kernel here for convolutions and with that we use pooling layers of 2*2. The activation function used for LENET is tanh. 
+
+## ALEXNET
+This is the first architecture which led to the start of convolution era as this was the first architecture with credible results. Alextnet gives better results as it uses RELU activation function. There is a Local Response Normalisation is applied owing to using Relu. There is a dropout layer as well, which deactivate some of the neurons. 
+
+## VGG NET
+
