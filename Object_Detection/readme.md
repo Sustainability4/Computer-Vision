@@ -26,5 +26,26 @@ Few competition for object detection are : [COCO](https://competitions.codalab.o
 For COCO evaluation we use something called as 11 point interpolation average precision. One can understand average precision to be a scenario which is
 favour when we have good precision and good recall. One can have a look [here](https://towardsdatascience.com/what-is-average-precision-in-object-detection-localization-algorithms-and-how-to-calculate-it-3f330efe697b#:~:text=Average%20precision%20is%20the%20area,is%20between%200%20to%201.)
 
+## Object Detection Family 
+There are three families. The first one is RCNN family, single shot detector family and centernet family. RCNN is one of the oldest and centernet is the newest family. 
 
+### RCNN Family
+It is usually slower but provide more accurate results. R stands for region. 
+
+#### RCNN 
+[RCNN](https://arxiv.org/pdf/1311.2524.pdf) takes an input image and extracts around 2000 region proposals. Each region proposal is then cropped and passed through a CNN layer for identification of the region image. Then the region of the image based on features is classified using SVM. We take an input image and apply the selective search to get the region proposals. We will pass these cropped regions into CNN or pre-trained CNN (Imagenet), we retrain the model based on our domain specific data. Once these features are extracted and identified then SVM will do the classification. We will apply linear regression for generating bounding boxes for each identified object in this technique. 
+
+Cons: Extracting 2000 region proposal is a pretty high number, extracting 2000 * (no. of classes) features is also cumbersome, it is also a processing heavy job. 
+
+#### FAST RCNN 
+#### Faster RCNN 
+#### Mask RCNN 
+
+### SSD Family 
+It is usually faster but with less accurate results.
+#### YOLO
+#### SSD
+
+### Centernet Family
+It is also slower but better prediction and accuracy. They are available in tensorflow 2 model. 
 
