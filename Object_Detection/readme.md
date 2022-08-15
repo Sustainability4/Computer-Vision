@@ -38,8 +38,11 @@ It is usually slower but provide more accurate results. R stands for region.
 Cons: Extracting 2000 region proposal is a pretty high number, extracting 2000 * (no. of classes) features is also cumbersome, it is also a processing heavy job. 
 
 #### FAST RCNN 
+Fast RCNN has improved the training pipeline in order to make it faster than RCNN. It is training using VGG 16 deep layer which is 9 times faster than RCNN. It uses a single stage training with multi-task loss i.e it will take both classification and regression loss. It selects a region of interest (ROI) and vectorize it using a max pooling layer. Then this is passed to the convolution layers which provide two important predictions. The first prediction is on classification of the type of class and other prediction is around the idea of bounding box regression. 
+
+Cons : We are using selective search for region selection which is a bit time consuming. It is a traditional CV algorithm which needs to be replaced. 
+
 #### Faster RCNN 
-#### Mask RCNN 
 
 ### SSD Family 
 It is usually faster but with less accurate results.
