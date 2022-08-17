@@ -61,3 +61,5 @@ SSD add multiple feature layers at the end point, It has better accuracy and tim
 ### Centernet Family
 It is also slower but better prediction and accuracy. They are available in tensorflow 2 model. 
 
+Follow ineuron course to learn inferencing the models on local machine
+
