@@ -43,6 +43,8 @@ Fast RCNN has improved the training pipeline in order to make it faster than RCN
 Cons : We are using selective search for region selection which is a bit time consuming. It is a traditional CV algorithm which needs to be replaced. 
 
 #### Faster RCNN 
+The region proposal algorithm is a bottleneck in improving the efficiency of the RCNN.The old systems are using selective search and hence they have introduced Region proposal network (RPN) which is a fully convolutional network which calculate bounding boxes and classes. It is a fully trained network. There are only 300 proposals per image compare to 2000 proposals in previous architectures. When the sliding window goes through feature maps its looking for proposals. 
+
 
 ### SSD Family 
 It is usually faster but with less accurate results.
