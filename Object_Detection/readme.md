@@ -43,13 +43,18 @@ Fast RCNN has improved the training pipeline in order to make it faster than RCN
 Cons : We are using selective search for region selection which is a bit time consuming. It is a traditional CV algorithm which needs to be replaced. 
 
 #### Faster RCNN 
-The region proposal algorithm is a bottleneck in improving the efficiency of the RCNN.The old systems are using selective search and hence they have introduced Region proposal network (RPN) which is a fully convolutional network which calculate bounding boxes and classes. It is a fully trained network. There are only 300 proposals per image compare to 2000 proposals in previous architectures. When the sliding window goes through feature maps its looking for proposals. 
+The region proposal algorithm is a bottleneck in improving the efficiency of the RCNN.The old systems are using selective search and hence they have introduced Region proposal network (RPN) which is a fully convolutional network which calculate bounding boxes and classes. It is a fully trained network. There are only 300 proposals per image compare to 2000 proposals in previous architectures. When the sliding window goes through feature maps its looking for proposals. Faster RCNN is just RPN + Fast RCNN. 
 
 
 ### SSD Family 
 It is usually faster but with less accurate results.
 #### YOLO
+You Only look Once (YOLO). It is unified real time object detection. The process is very simple. First the image gets resized to 448*448. Then a single convolutional network runs on the image. Then it tresholds the resulting decisions by model confidence. It is a single regression problem straight from image pixel to bounding boxes. YOLO lags behind in terms of accuracy but not in terms of speed. Each bounding box have five predictions x,y,h,w and confidence scores. 
+
+YOLO only can have two bounding boxes per grid and can have only one class. Hence when tehre is flock of objects it may struggle, predicting nearby and smaller objects, The loss function approximate detection perfomance which treats the error in large and small bounding boxes in a similar manner. In a large bounding box a small error is insignificant but in a small bounding box have a greater impact on IOU. There are also incorrect localisation. 
+
 #### SSD
+Single Shot Multibox Detector (SSD). 
 
 ### Centernet Family
 It is also slower but better prediction and accuracy. They are available in tensorflow 2 model. 
