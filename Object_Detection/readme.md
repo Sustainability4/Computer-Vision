@@ -54,7 +54,9 @@ You Only look Once (YOLO). It is unified real time object detection. The process
 YOLO only can have two bounding boxes per grid and can have only one class. Hence when tehre is flock of objects it may struggle, predicting nearby and smaller objects, The loss function approximate detection perfomance which treats the error in large and small bounding boxes in a similar manner. In a large bounding box a small error is insignificant but in a small bounding box have a greater impact on IOU. There are also incorrect localisation. 
 
 #### SSD
-Single Shot Multibox Detector (SSD). 
+Single Shot Multibox Detector (SSD). They are using default set of boxes with aspect ratio and scale per feature map location. SSD doesn't need any type of object proposal. It needs an input image and ground truth boxes for each image. Boxes of different aspect ratios at each location. For each default box we predict shape object and confidence scores. Model loss is the weighted sum between localisation loss and classification loss. 
+
+SSD add multiple feature layers at the end point, It has better accuracy and time then YOLO. 
 
 ### Centernet Family
 It is also slower but better prediction and accuracy. They are available in tensorflow 2 model. 
