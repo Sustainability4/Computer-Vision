@@ -63,3 +63,17 @@ It is also slower but better prediction and accuracy. They are available in tens
 
 Follow ineuron course to learn inferencing the models on [local machine](https://github.com/c17hawke/tfod-setup)
 
+
+#Implementation Resources
+
+##TFOD1.x
+[local machine implementation](https://github.com/c17hawke/tfod-setup)
+
+Important Folders: 
+1. Labelmap : Labels for various trained datasets. 
+2. Frozen Inference Graphs : It is the model file which holds the weight and architecture of the models. 
+3. Model Configuration : Each of pretrained model present in model zoo. 
+4. Object Detection Notebook : Its very handy sample notebook provided by tensorflow community. 
+
+
+
